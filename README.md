@@ -1,3 +1,7 @@
+[Docs](http://webpaperelements.github.io/paper-contact-chip/components/paper-contact-chip/)
+
+[DEMO](http://webpaperelements.github.io/paper-contact-chip/components/paper-contact-chip/demo/)
+
 # paper-chip
 
 An element providing a starting point for your own reusable Polymer elements.
