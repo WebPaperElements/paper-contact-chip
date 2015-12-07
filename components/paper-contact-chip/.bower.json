@@ -1,0 +1,40 @@
+{
+  "name": "paper-contact-chip",
+  "authors": [
+    "Vinicius Patrinhani <patrinhani@ciandt.com>"
+  ],
+  "description": "An element providing a solution to no problem in particular.",
+  "keywords": [
+    "web-component",
+    "polymer",
+    "seed"
+  ],
+  "main": "paper-contact-chip.html",
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/WebPaperElements/paper-contact-chip/",
+  "ignore": [
+    "/.*",
+    "/test/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.1.0",
+    "iron-a11y-keys": "PolymerElements/iron-a11y-keys#~1.0.4",
+    "iron-menu-behavior": "PolymerElements/iron-menu-behavior#~1.0.6",
+    "paper-chip": "WebPaperElements/paper-chip#~1.0.7"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "paper-item": "PolymerElements/paper-item#~1.1.2",
+    "web-component-tester": "*"
+  },
+  "_release": "e55c12affb",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "e55c12affbdf1f5d1f04a28785ea7845ba46c32d"
+  },
+  "_source": "git://github.com/WebPaperElements/paper-contact-chip.git",
+  "_target": "master",
+  "_originalSource": "WebPaperElements/paper-contact-chip",
+  "_direct": true
+}

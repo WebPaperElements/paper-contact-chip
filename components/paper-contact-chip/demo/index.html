@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>paper-contact-chip Demo</title>
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="../../paper-styles/paper-styles.html">
+    <link rel="import" href="../../paper-material/paper-material.html">
+    <link rel="import" href="../../paper-styles/classes/global.html">
+    <link rel="import" href="../../iron-icons/iron-icons.html">
+    <link rel="import" href="../paper-contact-chip.html">
+  </head>
+  <body unresolved>
+    <template is="dom-bind" id="app">
+      <style is="custom-style">
+        body {
+          background-color: var(--light-primary-color);
+        }
+
+        paper-material {
+          background-color: var(--primary-background-color);
+          margin: 24px;
+          padding: 16px;
+        }
+        
+        .horizontal-section {
+          min-height: 100px;
+        }
+        
+        paper-material paper-contact-chip {
+          margin-right: 16px;
+        }
+      </style>
+  
+      <h1>An example of <code>&lt;paper-contact-chip&gt;</code>:</h1>
+
+      <paper-material class="scroll fixed bottom">
+        <h3>Settings:</h3>
+        <div class="vertical layout">
+        </div>
+      </paper-material>
+
+      <paper-material>
+        <h3>An basic example of <code>&lt;paper-contact-chip&gt;</code>:</h3>
+        <div class="horizontal-section horizontal layout">
+          <paper-contact-chip label="John Doe" no-image openable></paper-contact-chip>
+          <paper-contact-chip label="John Doe" no-image openable removable></paper-contact-chip>
+          <paper-contact-chip label="John Doe" openable>
+            <div class="icon">J</div>
+          </paper-contact-chip>
+          <paper-contact-chip label="John Doe" selected="0" openable removable>
+            <iron-icon class="icon" icon="android"></iron-icon>
+            <paper-item class="selectable-item" selectable>
+              <span class="chip-label">Item 1</span>
+            </paper-item>
+            <paper-item class="selectable-item" selectable>
+              <span class="chip-label">Item 2</span>
+            </paper-item>
+            <paper-item class="selectable-item" selectable>
+              <span class="chip-label">Item 3</span>
+            </paper-item>
+            <paper-item class="selectable-item" selectable>
+              <span class="chip-label">Item 4</span>
+            </paper-item>
+          </paper-contact-chip>
+          <paper-contact-chip label="John Doe" openable removable>
+            <iron-icon class="icon" src="http://lorempixel.com/32/32/"></iron-icon>
+          </paper-contact-chip>
+        </div>
+      </paper-material>
+
+      <paper-material>
+        <h3>An animated example of <code>&lt;paper-contact-chip&gt;</code>:</h3>
+        <div class="horizontal-section horizontal layout">
+          <paper-contact-chip label="John Doe" no-image openable animated></paper-contact-chip>
+          <paper-contact-chip label="John Doe" no-image openable animated removable></paper-contact-chip>
+          <paper-contact-chip label="John Doe" openable animated>
+            <div class="icon">J</div>
+          </paper-contact-chip>
+          <paper-contact-chip label="John Doe" openable animated removable>
+            <iron-icon class="icon" icon="android"></iron-icon>
+          </paper-contact-chip>
+          <paper-contact-chip label="John Doe" openable animated removable>
+            <iron-icon class="icon" src="http://lorempixel.com/32/32/"></iron-icon>
+          </paper-contact-chip>
+        </div>
+      </paper-material>
+      
+      <script>
+        
+        window.addEventListener('WebComponentsReady', function() {
+          
+          var app = document.querySelector('#app');
+          
+        });
+      </script>
+    </template>
+  </body>
+</html>
